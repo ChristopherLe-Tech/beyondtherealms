@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create a Location — Beyond the Realms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="locations.html">Example Locations</a></li>
+      <li><a href="create.html">Create Your Own</a></li>
+    </ul>
+  </nav>
+
+  <main class="create-page">
+    <header class="page-header">
+      <h1>Create Your Own Location</h1>
+      <p class="intro">Use this worksheet to jot a location and add quick story beats. This form is for writing and saving in your notes.</p>
+    </header>
+
+    <form class="location-form" action="#" method="post" onsubmit="return false;">
+      <label for="loc-name">Location Name</label>
+      <input id="loc-name" name="loc-name" type="text" placeholder="e.g., Baldur's Gate">
+
+      <label for="loc-type">Location Type</label>
+      <select id="loc-type" name="loc-type">
+        <option>Castle / Keep</option>
+        <option>Village / Town</option>
+        <option>Ruins / Temple</option>
+        <option>Forest / Grove</option>
+        <option>Coast / Harbor</option>
+        <option>Underground / Mine</option>
+        <option>Mountain / Plains</option>
+        <option>Snowy Fields / Cold Landscape</option>
+      </select>
+
+      <fieldset class="tones">
+        <legend>Tone (choose one or more)</legend>
+        <label><input type="checkbox" name="tone" value="peaceful"> Peaceful</label>
+        <label><input type="checkbox" name="tone" value="mysterious"> Mysterious</label>
+        <label><input type="checkbox" name="tone" value="dangerous"> Dangerous</label>
+        <label><input type="checkbox" name="tone" value="ancient"> Ancient</label>
+        <label><input type="checkbox" name="tone" value="lively"> Lively</label>
+        <label><input type="checkbox" name="tone" value="empty"> Empty</label>
+      </fieldset>
+
+      <label for="lore">Lore / Description (4-6 sentences)</label>
+      <textarea id="lore" name="lore" rows="6" placeholder="Write the history, appearance, and main NPCs..."></textarea>
+
+      <label for="beat1">Story Beat 1</label>
+      <input id="beat1" name="beat1" type="text" placeholder="A hook, secret, or event">
+
+      <label for="beat2">Story Beat 2</label>
+      <input id="beat2" name="beat2" type="text" placeholder="An encounter or NPC interaction">
+
+      <label for="beat3">Story Beat 3</label>
+      <input id="beat3" name="beat3" type="text" placeholder="A twist or clue">
+
+      <label for="notes">DM Notes (optional)</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Notes for the table, stat suggestions, treasure ideas, additional characters/NPCs ..."></textarea>
+
+      <!-- This button is intentionally non-submitting. It is labeled as a print/save helper -->
+      <button class="button primary" type="button" onclick="window.print();">Print / Save</button>
+      <!-- The above print button uses the browser's feature (window.print) to help save it, in a real scenario this would be saved on the brower in a server -->
+     
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Beyond the Realms - Form</p>
+    <p> Contact us at Beyond@Realms.com </p>
+  </footer>
+</body>
+</html>
